@@ -4,7 +4,7 @@
     if (typeof define === 'function' && define.amd) {
         define(['pgpbuilder', 'smtpclient'], factory);
     } else if (typeof exports === 'object') {
-        module.exports = factory(require('pgpbuilder'), require('wo-smtpclient'));
+        module.exports = factory(require('pgpbuilder'), require('emailjs-smtp-client'));
     }
 }(function(PgpBuilder, SmtpClient) {
     /**

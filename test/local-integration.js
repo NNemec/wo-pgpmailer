@@ -6,7 +6,7 @@ var sinon = require('sinon'),
     chai = require('chai'),
     expect = chai.expect,
     PgpMailer = require('../src/pgpmailer'),
-    SmtpClient = require('wo-smtpclient'),
+    SmtpClient = require('emailjs-smtp-client'),
     openpgp = require('openpgp'),
     MailParser = require('mailparser').MailParser;
 

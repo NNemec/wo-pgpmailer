@@ -5,15 +5,9 @@
     "name": "Felix Hammerl",
     "email": "mail@felixhammerl.com"
   }],
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/whiteout-io/pgpmailer.git"
-  },
+  "repository": "NNemec/wo-pgpmailer.git",
   "version": "0.9.1",
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://github.com/whiteout-io/pgpmailer/blob/master/LICENSE"
-  }],
+  "license": "MIT",
   "engines": {
     "node": ">=0.10"
   },
@@ -22,24 +16,24 @@
     "test": "grunt"
   },
   "dependencies": {
-    "pgpbuilder": "~0.6.0",
-    "wo-smtpclient": "~0.6.0"
+    "pgpbuilder": "~1.0.0",
+    "emailjs-smtp-client": "~1.0.0"
   },
   "devDependencies": {
-    "es6-promise": "^2.0.1",
-    "openpgp": "~0.8.1",
-    "chai": "~1.8.1",
-    "grunt": "0.4.1",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-jshint": "0.6.4",
-    "grunt-mocha-phantomjs": "~0.4.1",
-    "grunt-mocha-test": "~0.8.1",
-    "mocha": "~1.16.2",
-    "requirejs": "~2.1.10",
-    "sinon": "~1.7.3",
-    "sinon-chai": "~2.5.0",
-    "arraybuffer-slice": "0.0.2",
-    "mailparser": "^0.4.2"
+    "es6-promise": "^4.0.5",
+    "openpgp": "~2.3.6",
+    "chai": "~3.5.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-mocha-phantomjs": "~4.0.0",
+    "grunt-mocha-test": "~0.13.2",
+    "mocha": "~3.2.0",
+    "requirejs": "~2.3.2",
+    "sinon": "~1.17.7",
+    "sinon-chai": "~2.8.0",
+    "arraybuffer-slice": "0.1.2",
+    "mailparser": "^2.0.1"
   },
   "keywords": [
     "e-mail",
