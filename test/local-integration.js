@@ -12,7 +12,7 @@ var sinon = require('sinon'),
 
 describe('local integration tests', function() {
     this.timeout(10000);
-    chai.Assertion.includeStack = true;
+    chai.config.includeStack = true;
 
     var mailer, smtpMock, pubkeyArmored;
 

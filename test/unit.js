@@ -10,7 +10,7 @@
     }
 }(function(sinon, chai, PgpMailer, PgpBuilder, SmtpClient) {
     var expect = chai.expect;
-    chai.Assertion.includeStack = true;
+    chai.config.includeStack = true;
 
     describe('unit tests', function() {
         var mailer, smtpClientStub, builderMock, opts;
