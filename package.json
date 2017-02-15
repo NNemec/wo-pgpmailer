@@ -1,10 +1,12 @@
 {
   "name": "pgpmailer",
   "author": "Whiteout Networks",
-  "maintainers": [{
-    "name": "Felix Hammerl",
-    "email": "mail@felixhammerl.com"
-  }],
+  "maintainers": [
+    {
+      "name": "Felix Hammerl",
+      "email": "mail@felixhammerl.com"
+    }
+  ],
   "repository": "NNemec/wo-pgpmailer.git",
   "version": "0.9.1",
   "license": "MIT",
@@ -20,20 +22,20 @@
     "emailjs-smtp-client": "~1.0.0"
   },
   "devDependencies": {
-    "es6-promise": "^4.0.5",
-    "openpgp": "~2.3.6",
+    "arraybuffer-slice": "0.1.2",
     "chai": "~3.5.0",
+    "es6-promise": "^4.0.5",
     "grunt": "1.0.1",
     "grunt-contrib-connect": "~1.0.2",
     "grunt-contrib-jshint": "1.1.0",
     "grunt-mocha-phantomjs": "~4.0.0",
     "grunt-mocha-test": "~0.13.2",
+    "mailparser": "^2.0.1",
     "mocha": "~3.2.0",
+    "openpgp": "~2.3.6",
     "requirejs": "~2.3.2",
     "sinon": "~1.17.7",
-    "sinon-chai": "~2.8.0",
-    "arraybuffer-slice": "0.1.2",
-    "mailparser": "^2.0.1"
+    "sinon-chai": "~2.8.0"
   },
   "keywords": [
     "e-mail",
