@@ -158,10 +158,14 @@ describe('local integration tests', function() {
                     var pgpMessageObj = openpgp.message.readArmored(ct);
                     var publicKeyObj = openpgp.key.readArmored(pubkeyArmored).keys[0];
 
-                    openpgp.decryptAndVerifyMessage(mailer._pgpbuilder._privateKey, [publicKeyObj], pgpMessageObj).then(function(decrypted) {
+                    pgpMessageObj.decrypt(mailer._pgpbuilder._privateKey).then(function(decrypted) {
                         expect(decrypted).to.exist;
-                        expect(decrypted.signatures[0].valid).to.be.true;
-                        expect(decrypted.text).to.exist;
+
+                        decrypted.verify([publicKeyObj]).forEach(function(res){
+                            expect(res.valid);
+                        });
+
+                        expect(decrypted.packets[1].filename).to.equal("msg.txt");
 
                         parser = new MailParser();
                         parser.on('end', function(parsedMail) {
@@ -174,7 +178,8 @@ describe('local integration tests', function() {
 
                             done();
                         });
-                        parser.end(decrypted.text);
+                        var buf = new Buffer(decrypted.packets[1].data);
+                        parser.end(buf);
                     });
                 });
                 parser.end(sentRFCMessage);
