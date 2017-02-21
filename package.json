@@ -32,7 +32,7 @@
     "grunt-mocha-test": "~0.13.2",
     "mailparser": "^0.6.2",
     "mocha": "~3.2.0",
-    "openpgp": "~2.3.6",
+    "openpgp": "^1.6.2",
     "requirejs": "~2.3.2",
     "sinon": "~1.17.7",
     "sinon-chai": "~2.8.0"
